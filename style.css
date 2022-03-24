@@ -9,6 +9,15 @@ body {
     font-family: 'Courier New', Courier, monospace;
     color: #fff;    
   }
+h1::before {
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  background-size: cover;
+  background-position: top center;
+  
+}
+
 
   h1::after {
     content: '|';
@@ -16,8 +25,28 @@ body {
     margin-left: 5px;
     display: inline-block;
     animation: blink .7s infinite;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
   }
 
+  p::before{
+   
+      content: '|';
+      opacity: 1;
+      margin-left: 5px;
+      display: inline-block;
+      animation: blink .7s infinite;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #fff;
+    
+  }
+  
   @keyframes blink {
     0%, 100% {
       opacity: 1;
